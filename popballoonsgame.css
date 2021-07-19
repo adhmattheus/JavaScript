@@ -1,0 +1,7 @@
+#cenario{
+    float: left; 
+    width: 600px; 
+    height: 500px; 
+    background: url(imagens/cenario.png); 
+    background-position: bottom;
+}
