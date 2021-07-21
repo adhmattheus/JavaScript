@@ -4,44 +4,48 @@
 <head>
     <meta charset="utf-8">
     <title>Pop Ballons Game Start</title>
+    <script src="popballoonsgame.js"></script>
+
 </head>
 
-<body>
-    <div style="float: left; width: auto; height: 500px; background: white; border: solid 1px #a2a2a2;">
+<body onload="inciaJogo()">
 
-        <table border="1">
+    <div
+        style="float: left; width: auto; height: 500px; background: white; border: solid 1px #a2a2a2; margin-right: 5px;">
+
+        <table>
             <tr>
                 <td>
                     <img src="imagens/balao_azul_grande.png" />
                 </td>
                 <td>
-                    10
+                    <span id="baloes_inteiros" style="font-size: 40px;"></span>
                 </td>
             </tr>
         </table>
 
-        <table border="1">
+        <table>
             <tr>
                 <td>
                     <img src="imagens/balao_azul_grande_estourado.png" />
                 </td>
                 <td>
-                    10
+                    <span id="baloes_estourados" style="font-size: 49px;"></span>
                 </td>
             </tr>
         </table>
 
-        <table border="1" style="width: 140px; height: 132px;">
+        <table style="width: 140px; height: 132px;">
             <tr>
-                <td style="background: url('imagens/cronometro.png')">
-
+                <td style="background: url('imagens/cronometro.png'); text-align: center;">
+                    <span id="cronometro" style="color: red; font-size: 30px;"></span>
                 </td>
             </tr>
         </table>
 
     </div>
 
-    <div
+    <div id="cenario"
         style="float: left; width: 600px; height: 500px; background: url(imagens/cenario.png); background-position: bottom;">
 
     </div>
